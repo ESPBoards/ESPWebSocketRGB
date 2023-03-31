@@ -12,6 +12,7 @@ socket.onmessage = function(event) {
   colorPicker.color.red = data.r;
   colorPicker.color.green = data.g;
   colorPicker.color.blue = data.b;
+  changeBackgroundColor(data);
 
   console.log(`[message] Data received from server: ${event.data}`);
 };
